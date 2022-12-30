@@ -9,7 +9,7 @@ Topic - how to quickly get the html sample code
 Topic - where to add Javascript in HTML file
 1. there're two places we can add `<script></script>`, either in the `<head></head>` or at the end of `<body></body>`.
     * the best practise is to add them at the end of `<body></body>` section. 1) the browser processes code from top to bottom. If the code is heavy, then it takes a long time to process Javascript before rendering the content. It's impacting user experience. 2) script content talks to DOM elements on the page. Hence, before executing script, we need those DOMs exist on the page.
-    * Exceptions, for example, 3<sup>rd<sup> party code requires to be at the top in head section.
+    * Exceptions, for example, 3rd party code requires to be at the top in head section.
 
 Topic - separation of concern
 1. we shouldnt write all the JS code in a single html file but separate them.
