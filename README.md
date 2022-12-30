@@ -5,6 +5,7 @@
     * npm, is a cli tool the help install packages
     * local installs at ./node_modules/.bin/directory
     * global installs at global/bin/directory
+    * ***we need to make sure that nvm installation directory doesn't have space***
     * [nvm-windows - download url](https://github.com/coreybutler/nvm-windows/releases)
     * [nvm-windows - how to use](https://learn.microsoft.com/en-us/windows/dev-environment/javascript/nodejs-on-windows)
 2. install node.js
