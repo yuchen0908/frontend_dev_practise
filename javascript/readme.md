@@ -22,6 +22,25 @@ The rest of the topics from the Youtube video can be found in /js-basic/index.js
 # Javascript OOP
 [reference - Javascript OOP](https://www.youtube.com/watch?v=PFmuCDHHpwk)
 
+Topic - difference between procedural and object-oriented programming
+1. Procedural programming - it's function based and a program connects different functions together
+2. Object-oriented programming - combining related functions and variables together into a unit, and called the unit an Object. 
+    * functions called method
+    * variables called property
+    * for example, a "car" object, consists of properties like "make", "model", "colour", and methods like "start()", "stop()" and "move()"
+    * a real-life example in browser is localStorage, which saves data in the browser.
+
+Topic - key concepts of JS OOP
+1. encapsulation - combine related methods and properties together under one unit / object
+2. abstraction - some benefits of OOP
+    * when using object which encapsulates properties and methods, it provides a simpler interface than procedural programming
+    * it reduces the impact of change. As long as the input and output are the same, we don't care how internal methods / properties are changed. 
+3. inheritance - inherit properties and methods when creating a new class from an existing class
+    * it reduces redundancy
+    * for example, `TextBox`, `Select` and `CheckBox` are all HTML elements. And they all have properties like "hidden" and "innerHTML", and methods like "click()" and "focus()". Hence, we don't need to write each class but write "HTMLElement" class, and those inherit from it.
+4. Polymorphism (many forms) - when rendering `TextBox`, `Select` and `CheckBox`, methods underneath will be different, however, via the same `render()` method.
+
+
 # ES6 Tutorials
 [reference - ES6 tutorial](https://www.youtube.com/watch?v=NCwa_xi0Uuc)
 
@@ -32,6 +51,12 @@ The rest of the topics from the Youtube video can be found in /js-basic/index.js
 [reference - React JS Tutorial](https://www.youtube.com/watch?v=Ke90Tje7VS0&list=PLTjRvDozrdlw5En5v2xrBr_EqieHf7hGs&index=2)
 
 # Other topics
+Topic - Error Handling
+
+Topic - Async JS
+
+Topic - Equality difference between "===" and "=="
+
 Topic - Arrow function expressions
 * An arrow function expression is a compact alternative to a traditional function expression, with some semantic differences and deliberate limitations in usage:
     * Arrow functions don't have their own bindings to `this`, `arguments`, or `super`, and should not be used as `methods`.

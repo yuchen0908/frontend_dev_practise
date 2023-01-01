@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--We want to create a heading first when building a page. 
+        * It defines the topic of the page.
+        * we may also have h2 tags to define subtopics and also h3 for further breaking down.
+        * however, we don't want h4 and anything further.
+
+        header tag provides a meaning. It represents a container for introdctory content or a set of navigational links.
+    -->
+    <header>
+    <h1>My goals for the year</h1>
+        <!-- nav indicates that it's navagation area.
+            * aria-label provide an alternative to an element that has no visible text on the screen (no text/label).
+            * for nav case, it labels the purpose of the navigation in a non-text way.
+        -->
+        <nav aria-label="primary-navigation">
+            <ul>
+                <!--#html and #vacation are to set archors across the page-->
+                <li><a href="#html">Learning HTML</a></li>
+                <li><a href="#vacation">Planning a vacatioin</a></li>
+            </ul>
+        </nav>
+    </header>
+    <hr />
+    
+    <!--We should only have one main tag. It specifies the main content of a document. The content inside main tag should be unique to the document. It should not contain any content that is reqpeated across documents, such as site logo, nav links, etc.
+    -->
+    <main>
+        
+        <!--article vs section
+            * both article and section can be used to create blocks of content. 
+            * Rule of thumb is that article should have a heading / topic
+            * section is a more generic usage. such as multiple sections across the document.
+        -->
+        <article id="html"> <!--the id is now tied to our nav item-->
+            <h2>I'm ready to learn html</h2>
+            <p>This is my first web page.</p>
+            <section>
+                <h3>HTML5</h3>
+                <img src="https://www.htmlgoodies.com/wp-content/uploads/2021/08/HTML5-300x300.png" alt="HTML5 icon" title="I'm learning HTML5" width="300" height="300" />
+                <figure>
+                    <figcaption>An Example of HTML5 code</figcaption>
+                    <p><code>&lt;h1&gt;Hello Word!&lt;/h1&gt;</code></p>
+                </figure>
+            </section>
+            <section>
+                <h3>My daily schedule</h3>
+                <p>let me tell you how: </p>
+                <ol>
+                    <li>... I learn more about web dev</li>
+                    <li>... I plan out  my schedule</li>
+                    <li>... I use resources from <abbr title="Mozilla Developer Network"><a href="https://developer.mozilla.org/">MDN</a></abbr>.</li>
+                </ol>
+                
+                <!-- Aside can either be  a sidebar or supplementary elements.
+                    * details and summary are a pair working together.
+                    * the visual effect is that it creates a marker at the front and we can clikc to unveil the answers saved in the p tag.
+                -->
+                <aside>
+                    <details>
+                        <summary>Guess the <mark>number of hours</mark> I code per day</summary>
+                        <p>I start at 8 am and i write for 3 hours every morning.</p>
+                    </details>
+                </aside>
+            </section>
+        </article>
+        <hr />
+        <article id="vacation">
+            <h2>I'm also planning a vacation.</h2>
+            <p>I've been working hard and <em>really need a getaway</em>.</p>
+            <p>I live in <abbr title="Kansas">KS</abbr> so I want to visit a beach.</p>
+
+            <section>
+                <h3>Places I'd like to visit</h3>
+                <ul>
+                    <li>
+                        <p>I've heard good things about Caribbean.</p>
+                        <figure>
+                            <img src="https://www.travelandleisure.com/thmb/XGn_pf73ImYO7PzDrHVbFTSVngg=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/bavaro-beach-dominican-republic-CARIBBEACHES0721-e885a60366704190a996269843ecd778.jpg" alt="" height="200" width="300" loading="lazy">
+                        </figure>
+                    </li>
+                    <li>
+                        <p>Shanghai is also some place I wanna go. Haven't been back for almost three years due to covid.</p>
+                        <figure>
+                            <img src="https://i.guim.co.uk/img/media/2da181e0b2badac0891cdda81e39ac54255eef08/0_524_8159_4899/master/8159.jpg?width=1200&height=900&quality=85&auto=format&fit=crop&s=ac373188bb987c6f8e5c2c6977221e83" alt="" width="400" height="300" loading="lazy">
+                        </figure>
+                    </li>
+                </ul>
+            </section>
+        </article>
+    </main>
+
+    <!-- A footer typically contains information about the author of the section, copyright data or links to related documents.
+    -->
+    <footer>
+        <p><a href="about.html"></a></p>
+        <p><a href="#">back to the top</a></p>
+    </footer>
+    
+
+
+</body>
+</html>

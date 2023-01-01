@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html crash course</title>
+</head>
+
+<body>
+    <!-- Topci 1 -different headings
+    -->
+    <h1>heading 1</h1>
+    <h2>heading 2</h2>
+    <h3>heading 3</h3>
+    <h4>heading 4</h4>
+    <h5>heading 5</h5>
+    <h6>heading 6</h6>
+    <hr />
+
+    <!-- Topci 2 - p tag starts a new line
+            write "lorem" + tab, will generate a complete sentense
+    -->
+    <p>Demonstrate p tag</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem ducimus expedita ab sequi ex reiciendis nisi
+        sint quisquam. Dolore voluptatem animi possimus iure nisi commodi modi maxime, suscipit vel placeat.</p>
+    <!-- strong is to bold words and em / emphasize is make words italic-->
+    <p><strong>Lorem ipsum</strong>, <em> sit amet consectetur</em> adipisicing elit. Quidem ducimus expedita <br /> ab
+        sequi ex reiciendis nisi sint quisquam. <mark>voluptatem</mark> <sup>animi</sup> <sub>possimus</sub> iure nisi
+        commodi modi maxime, suscipit vel placeat.</p>
+    <!-- hr creates a grey Horizontal Rule to divide sections -->
+    <hr />
+
+    <!-- Topic 3 - Div tag is block tag. it starts a new line and group different elements together.-->
+    <div>
+        <p>Demonstrate div tag, which is block tag.</p>
+        <span>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores quidem saepe tempore laudantium unde
+                culpa eum fuga iusto voluptas, necessitatibus autem asperiores architecto placeat odit reprehenderit
+                distinctio quod voluptatem cum?</p>
+        </span>
+    </div>
+    <hr />
+
+    <!-- Topic 4 - Span tag is inline tag. It means different Span elements align in the same line. -->
+    <div>
+        <p>Demonstrate Span tags, and they organise items inline.</p>
+        <span>Inline 1 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae iure aliquam odit
+            perferendis in.
+            Doloremque rerum quidem architecto cum repellendus iure dignissimos distinctio? Voluptatibus autem quod
+            debitis repellat harum non.</span>
+        <span>Inline 2 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima voluptate, cupiditate aliquid
+            autem
+            officia fuga facilis, assumenda nisi ratione error nihil quibusdam eligendi est placeat debitis dolor maxime
+            mollitia quo.</span>
+    </div>
+    <hr />
+
+    <!-- Topic 5 - (Un-)Ordered List & definition list; defintion list may be used to explain things in a term (dt) and description (dd) combo -->
+    <div>
+        <p>Demonstrate Ordered List:</p>
+        <ol>
+            <li>Bread</li>
+            <li>Milk</li>
+            <li>Eggs</li>
+        </ol>
+        <p>Demonstrate Un-ordered List:</p>
+        <ul>
+            <li>Turn to the left</li>
+            <li>Turn to the right</li>
+        </ul>
+        <p>Demonstrate Definiton List:</p>
+        <dl>
+            <dt>Ice cream</dt>
+            <dd> - A soft sweet frozen food</dd>
+            <dt>Tea</dt>
+            <dd> - A hot drink</dd>
+        </dl>
+    </div>
+    <hr />
+
+    <!-- Topic 6 - image tag , it has width and height attributes -->
+    <p>Demonstrate Img tag</p>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTPNGkqeacwVhKCgYCOB4t3ulnH5RBgFrtg3fjnR8XVvytip2yPzVLE7LV6pquiSyd8QE&usqp=CAU"
+        alt="Disney Plus" height="200" />
+    <hr />
+
+    <!-- Topic 7 - hyperlink tag, "_blank" opens a new tab -->
+    <p>Demonstrate a tag</p>
+    <div><a href="https://www.google.com" target="_blank">Google</a></div>
+    <div><a href="contact.html">Contact Page</a></div>
+    <hr />
+
+    <!-- Topic 8 - table tag -->
+    <p>Demonstrate table tags</p>
+    <table>
+        <thead>
+            <tr>
+                <th>Heading 1</th>
+                <th>Heading 2</th>
+                <th>Heading 3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Data1</td>
+                <td>Data2</td>
+                <td>Data3</td>
+            </tr>
+            <tr>
+                <td>Data4</td>
+                <td>Data5</td>
+                <td>Data6</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr />
+
+    <!-- Topic 9 - web forms
+            * for form, it has label and input as a pair
+            * define the id of input, and tied the input to the label's "for" attribute so that HTML knows that label and input are the pair.
+    -->
+    <p>Demonstrate form tags</p>
+    <form action="">
+        <label for="username">Username</label><br />
+        <input type="text" id="username" /><br /><br />
+
+        <label for="about">About U</label>
+        <textarea name="" id="" cols="30" rows="10" id="about"></textarea><br /><br />
+    
+        <label for="country">Country</label><br />
+        <select name="" id="country">
+            <option value="india">India</option>
+            <option value="china">China</option>
+            <option value="singapore">Singapore</option>
+        </select><br /><br />
+
+        <label>Job Type</label>
+        <input type="radio" id="partime" name="jobtype" value="partime"/>
+        <label for="partime">Part Time</label>
+        <input type="radio" id="fulltime" name="jobtype" value="fulltime"/>
+        <label for="fulltime"> Full Time</label><br /><br />
+
+        <label>Job Type Checkbox</label>
+        <input type="checkbox" id="partime" name="jobtype" value="partimecb"/>
+        <label for="partimecb">Part Time</label>
+        <input type="checkbox" id="fulltime" name="jobtype" value="fulltimecb"/>
+        <label for="fulltimecb"> Full Time</label><br /><br />
+
+        <button>Submit</button>
+    </form>
+
+</body>
+
+</html>
