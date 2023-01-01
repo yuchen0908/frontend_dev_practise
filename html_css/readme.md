@@ -11,6 +11,7 @@ Topic Semantic HTML
     * `aside` tag , content aside from the main content. 
     * `footer` tag includes things like privacy policy, terms and conditions.
 3. reference of semantic HTML can be found [here](https://www.w3schools.com/html/html5_semantic_elements.asp)
+4. the rest of the content can be found under ./html-01-basic
 
 # Semantic HTML Tags
 [HTML5 semantic elements tutorial](https://www.youtube.com/watch?v=kX3TfdUqpuU)
@@ -22,3 +23,77 @@ There're some key points we can take away from this tutorial:
     * Within `header`, we can create `nav`
     * within `main`, we may have a multiple `article`s or `section`s.
     * `footer` will be used to contain stuff like copyright, privacy policy, terms-and-conditions etc..
+4. html validator: it is used to validate the syntax [here](https://validator.w3.org/). There is also a CSS validator we can use.
+5. the rest of the items can be found under ./html-02-semantic
+
+# Basic CSS Tutorial
+[Here](https://www.youtube.com/watch?v=Icf5D3fEKbM&list=PLif4iXLY4SOxbZS26ruK6s6N7ffYPEGF2&index=4)
+
+Topic - Intro
+CSS (Cascading Style Sheets) is the language used to style HTML document. A metaphor is 
+* HTML is the house strucutre, which builds the skeleton of the house.
+* CSS is the renovation of the house, which provides colours and likes
+* JS is the functionality of the house, like electricity and utilities. 
+
+CSS control the layout of the webpage, the spacing between elements and what colour the text should be in, etc.. Two key quesitons we need to be able to answer:
+* How do i select an HTML element from CSS?
+* How do I style the selected elements?
+
+Topic - How to add CSS?
+There're three ways to add CSS
+1. inline styles - adding the CSS style to a single HTML element.
+    * The code is written within the tag, for example `<p style='color:orange'>`. 
+    * The syntax is to start with "style" as the keyword, and put key-value pair as the value. For example the colour pair by assigning "Orange" as the value. 
+    * Cons: 1) it's difficult to maintain. 2) it's hard to read because we mix HTML and CSS. 
+    * Usecases: it is not a good practise; however, sometimes, for example in HTML email, we may use this method.
+2. internal stylesheet - adding CSS style at the `head` section within `<style></style>` tag.
+    * The method decouples HTML and styling.
+    * CSS Rule Syntax: selector + style declaration. For example, we want to style h1 tag. Then we will write `h1 {color: orange;}`. We can add more for h1, as long as we keep writing key-value pairs with ";".
+    * Cons: 1) if we have a lot of CSS Stylings then we will create a long HTML file. It's not easy to manage. 2) also if we have mulitple webpages and they require the same styling. we will have to create css for each page. It's not easy to manage as well. 
+3. external stylesheet - maintain CSS stylesheet as an external .css file, and link back to html file via `link` tag.
+
+Topic - CSS Rule Syntax
+1. type selector
+    * scope: it only selects the tags under the same name
+    * syntax: `tag name {key:value;}`
+2. universal selector
+    * scope: it selects all the HTML elements across the page.
+    * syntax: `* {key:value;}`
+3. class selector - one of the most frequently used selector
+    * scope: it selects elements that share the same class name.
+    * syntax: `.className {key:value;}`
+4. id selector
+    * scope: it selects elements that share the same id name.
+    * syntax: `#id {key:value;}`
+
+Topic - basic CSS options:
+1. colour properties
+    * hex method, `#000000` (black) and `#FFFFFF` (white), always have 6 digits.
+    * rgba method, `rgba(0,0,0, 0.5)`, means rgb, plus opacity (from 0 to 1)
+    * we can define a class as "colour" and update css style with a background colour.
+2. text properties
+    * `font-family`, to change the font
+    * we can define a class called "font-styles", and use the font via the class. With this methods, we can add other font-related styles in such as `font-size`, `font-weight`, `font-size`, `text-decorate`;
+3. text layout properties
+    * we add those attributes under the `.grey` class in styles.css file.
+    * `text-align`, to specify whether the text should be left-aligned, position in the center or right-aligned.
+    * `line-height`, to specify the vertical (up and down) space of text. we can change the value to see the difference.
+    *  `word-spacing`, to specify the space between two words. 
+    * `letter-spacing`, to specify the space between each character within a word.
+
+Topic - CSS Box Model
+In web design, every HTML element is considered a rectangular box. It is a kind-of standard by which browsers render HTML elements. It consists of 4 parts:
+* margin, margin is the outer layer. It's quite useful to create space between different HTML elements esp block type of HTML elements. 
+* border, border sits around the padidng and actual content. Border can be understood as the boundary, and we can solidify it by filling the colour.
+* padding, padding sits around the content. IT's the space between content and border.
+* the actual content, can be sized by `width` and `height`
+
+Topic - cascading
+When two rules apply that have equal specificity, the one that comes last in the CSS is the one that will be used.
+* specificity, is how the browser decides which rule applies if multiple rules have different selectors but apply to the same element.
+
+
+
+# Resources:
+1. a library / service that provides legally-protected images [here](https://unsplash.com/)
+2. a library / service that provides legally-proctected icons [here](https://www.flaticon.com/)

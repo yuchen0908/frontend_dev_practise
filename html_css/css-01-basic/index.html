@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS crash course</title>
+    <!-- CSS internal style-->
+    <style>
+        h2 {color: grey;}
+    </style>
+    <!-- CSS external style 
+        * rel, means relationship
+    -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <!-- CSS inline style -->
+        <h1 style='color: orange'>CSS Crash Course</h1>
+        <nav>
+            <ul>
+                <li><a href="#article1">The first article</a></li>
+                <li><a href="#article2">The second article</a></li>
+                <li><a href="#article3">The third article</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article class='upper-part grey' id="article1">
+            <h2 class='upper-part'>The first article</h2>
+            <p class='upper-part' id="lorem-default">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi illum sequi debitis consequuntur ducimus harum est dolor aperiam amet nemo deserunt voluptatem obcaecati aut, beatae veniam accusamus ipsa ab assumenda itaque ullam possimus rem voluptas laboriosam quia? Quo assumenda fuga autem labore nesciunt facere alias animi. Eaque earum eos voluptatem.</p>
+        </article>
+        
+        <article class="lower-part" id="article2">
+            <h2>The second article</h2>
+            <p class="lower-part font-styles" id="lorem-100">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio quae voluptate impedit nemo dolore optio quisquam ullam, quas, aliquam placeat sapiente, tempore eius repellat veritatis iure. Temporibus vero aperiam nulla, dolor ea repudiandae ut atque cupiditate molestias quia illum facilis suscipit mollitia quas voluptatem consequuntur. Ipsa excepturi, accusantium sint assumenda corporis sit iure velit quae ea voluptas pariatur omnis? Voluptates sit cumque necessitatibus doloribus, quam earum laborum dignissimos iusto vero ea aliquid et quidem delectus cum nemo assumenda temporibus harum? Quibusdam repudiandae suscipit ipsam explicabo omnis. Sapiente esse voluptates eos a vitae enim laborum non totam fugiat. Ex, dolore voluptas.</p>
+        </article>
+        
+        <article id="article3">
+            <h2>CSS Box Model</h2>
+            <ul>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, aliquid.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, quaerat?</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+            </ul>
+
+            <section class="box-model">
+                The CSS Model Box. It seems like it's not applying to article but section. section is the better equavilence to div.
+            </section>
+
+            <section>
+                <h3>Cascade</h3>
+                <h4>Specificity</h4>
+            </section>
+
+        </article>
+    </main>
+    
+    <footer>
+        <a href="#">Back to the top</a>
+    </footer>
+</body>
+</html>

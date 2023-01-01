@@ -1,0 +1,85 @@
+/***************************************************
+    Topic 1 - universal css selector
+    * it applies to all the elements across the page
+*/
+/* * {
+    padding-top: 5px;
+} */
+
+/***************************************************
+    Topic 2 - tag css selector
+    * it only applies to the tag named here.
+*/
+p {
+    color: darkblue;
+}
+
+/***************************************************
+    Topic 3 - class selector
+    * it only applies to the one with the class selected
+*/
+.upper-part {
+    padding-left:5%;
+    padding-right:5%;
+    padding-bottom: 5px;
+    font-family: Verdana;
+}
+
+
+/***************************************************
+    Topic 4 - id selector
+    * it only applies to the one with the same id
+*/
+#lorem-default {
+    font-size: large;
+}
+
+/***************************************************
+    Topic 5 - add background colour
+*/
+.grey {
+    background-color: rgba(128,128,128, 0.1);
+    text-align: left;
+    line-height: 1.5;
+    word-spacing: 1px;
+    letter-spacing: 0.5px;
+}
+
+/***************************************************
+    Topic 6 - class level of changing font
+    * here we include the most used font related attributes.
+*/
+.font-styles {
+    font-family:'Courier New', Courier, monospace;
+    font-style:italic;
+    font-weight:bold;
+    text-decoration: underline;
+    font-size: 15px;
+
+}
+
+/***************************************************
+    Topic 7 - updating list styling. 
+    * currently we set up the list's markers as none
+    * and remove the margin and padding around it.
+    * NOTE - list-style-type is None is very useful cuz most of the cases there won't be a bullet point.
+*/
+ul {
+    list-style-type:none;
+    margin: 0;
+    padding: 0;
+}
+
+/***************************************************
+    Topic 8 - experimenting Box Model. 
+*/
+
+.box-model {
+    margin: 10px;
+    border: 3px solid red;
+    height: 100px;
+    width: 500px;
+    padding: 50px;
+}
+
+
