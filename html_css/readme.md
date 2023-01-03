@@ -29,7 +29,7 @@ There're some key points we can take away from this tutorial:
 # Basic CSS Tutorial
 [Video](https://www.youtube.com/watch?v=Icf5D3fEKbM&list=PLif4iXLY4SOxbZS26ruK6s6N7ffYPEGF2&index=4)
 
-Topic - Intro
+Topic - Intro<br>
 CSS (Cascading Style Sheets) is the language used to style HTML document. A metaphor is 
 * HTML is the house strucutre, which builds the skeleton of the house.
 * CSS is the renovation of the house, which provides colours and likes
@@ -39,7 +39,7 @@ CSS control the layout of the webpage, the spacing between elements and what col
 * How do i select an HTML element from CSS?
 * How do I style the selected elements?
 
-Topic - How to add CSS?
+Topic - How to add CSS?<br>
 There're three ways to add CSS
 1. inline styles - adding the CSS style to a single HTML element.
     * The code is written within the tag, for example `<p style='color:orange'>`. 
@@ -81,7 +81,7 @@ Topic - basic CSS options:
     *  `word-spacing`, to specify the space between two words. 
     * `letter-spacing`, to specify the space between each character within a word.
 
-Topic - CSS Box Model
+Topic - CSS Box Model<br>
 In web design, every HTML element is considered a rectangular box. It is a kind-of standard by which browsers render HTML elements. It consists of 4 parts:
 * margin, margin is the outer layer. It's quite useful to create space between different HTML elements esp block type of HTML elements. 
 * border, border sits around the padidng and actual content. Border can be understood as the boundary, and we can solidify it by filling the colour.
@@ -94,13 +94,13 @@ When two rules apply that have equal specificity, the one that comes last in the
     1. taking h4 specificity tag as an example -> refer to Topic 9 in css stylesheet.
     2. [more details](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity)
 
-Topic - inheritance
+Topic - inheritance<br>
 Some CSS property values set on parent elements are inheried by their child elements, and some are not.
 * inheritance controls what happens when no value is specified for a property on an element (which by default set to the computed value of the parent element).
 * CSS properties can be categorised in two types: inheried properties and non-inherited properties (which by default are set to initial values).  
 * inheritance is less superior than specificity.
 
-Topic - CSS Units
+Topic - CSS Units<br>
 
 absolute units - good for printing
 |Unit|Name       |Equivalent to            |
@@ -130,6 +130,39 @@ we can also use max() and min() to calculate values.
 
 # CSS Flexbox Crash Course
 [Video](https://www.youtube.com/watch?v=z62f2k38s64&list=PLif4iXLY4SOxbZS26ruK6s6N7ffYPEGF2&index=5&t=416s)
+
+Topic - what is Flexbox
+1. CSS Flexbox module is a <em>one-dimensional</em> layout model. It allows to densign flexible and efficient layouts, align and distribute space among items in a container.
+2. what layout modes availabe before Flexbox:
+    * block such as `div` and `section` in webpage
+    * inline, for text
+    * table, for 2D table data
+    * positioned, for explicit poisiton of an element. ref to css stylesheet in css-01-basic.
+    The problem with those layouts is not flexible enough to arrange items across the document.
+3. why Flexbox?
+    * it's flexible enough to arrange items. 
+    * provides functionality to spacing, alignment and order of items.
+4. some terminologies:
+    * container and flex items. It's as the literal meaning that imagine a box with items within.
+        * a parent container: a flex container. There're a few properties associated with flex container.
+            * `display`, mandatory to work with box.
+            * `flex-direction`, it defines how flex items place in the container (whether it's vertical or horizontal)
+            * `flex-wrap`, it controls wraping items in the container.
+            * `flex-flow`, it's a shorthand / combo of `flex-direction` and `flex-wrap`.
+            * `column-gap`, to set the gap between columns
+            * `row-gap`, to set the gap between rows
+            * `gap`, it's a shorthand / combo of `column-gap` and `row-gap`.
+            * `justify-content`, define the alignment of content along the main axis
+            * `align-items`, defines the default behavior for how flex items are laid out along the cross axis on the current line
+            * `align-content`,  aligns a flex container’s lines within when there is extra space in the cross-axis, similar to how `justify-content` aligns individual items within the main-axis
+        * immediate children: flex items
+        * [visual ref](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+    * flex axes, which consist of the main axis and cross axis.
+        * by default, main axis is horizontal direction, and grows from left to right; the cross axis is perpendicular to main axis and grows from top to bottom.
+        * the start of the main axis is called main start, and the end of the main axis is called main end. The length between main start and main end is called main size.
+        * similarly, we have cross start, cross end and cross size. 
+
+
 
 # Resources:
 1. a library / service that provides legally-protected images [here](https://unsplash.com/)
