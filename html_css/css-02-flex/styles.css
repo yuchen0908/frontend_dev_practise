@@ -1,0 +1,256 @@
+body {
+    margin: 0;
+}
+
+/***********************************************************************************
+    Topic 1 - container property - display
+    * by default, it's block because container applies to tag<article>
+    * once we updated it to "flex", we can see the change of arrangement
+        * which is block level flex
+        * we can also use "inline-flex", which container now fit to the item content.
+*/
+.container-1 {
+    /*define as flex tells the system to use flex methods*/
+    display: flex;          /* values: flex (default), inline-flex */     
+   
+    border: 6px solid black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+   
+    flex-direction: row;    /* values: row (default), row-reverse, column, column-reverse */
+    flex-wrap: wrap;      /* values: nowrap (default), wrap, wrap-reverse */
+
+}
+
+/* test flex-direction as column along with flex-wrap as wrap
+*/
+.container-2 {
+    display: flex;  
+    
+    border: 6px solid black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+   
+    flex-direction: column;    /* values: row, row-reverse, column, column-reverse */
+    height: 400px;
+    flex-wrap: wrap;           /* values: nowrap, wrap, wrap-reverse */
+
+}
+
+/*********************************************************************************** 
+    Topic 2 - column and row spacing
+    * column-gap and row-gap define the gap between each flex item horizontally and vertically.
+    * or we can use gap as the combo of the two above.
+    * values cannot be negative value or percentage.
+    * flex-flow is the combo of flex-direction and flex-wrap.
+
+*/
+.container-3 {
+    display: flex;   
+    
+    border: 6px solid black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    flex-flow: row wrap;    /* flex-flow accepts two values: <flex-direction>, <flex-wrap> */
+    column-gap: 20px;       /* gap between each column */
+    row-gap: 30px;          /* gap between each row */
+    /* gap: 30px, 20px;        gap can add the following two values: <row-gap>, <column-gap> */
+
+}
+
+/*********************************************************************************** 
+    Topic 3 - justify-content
+    * justify-content accepts the following values
+    *   flex-start, the flex items from the main start, if it's horizontal, then from left; otherwise, from top
+    *   flex-end, the flex items from the main end, if it's horizontal, then from right; otherwise, from bottom.
+    *   center, the flex items sit in the middle of the main axis
+    *   space-between, the flex items evenly distributed across main axis, and the first and last items just align to the main start and end. 
+    *   space-around, similar to space-between however, there are spaces between main start and first item, and between main end and last item. 
+    *   space-evenly, the space are evenly distributed, even space between main start and first item, and between main end and last item.
+
+    if justify-content is set, then we dont need column-gap to be set. 
+*/
+.container-4 {
+    display: flex;   
+    
+    border: 6px solid black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    justify-content: space-evenly;    /* value: flex-start (default), flex-end, center, space-between, space-around, space-evenly */
+
+}
+
+/*********************************************************************************** 
+    Topic 4 - align-items
+    * align-items defines the default behaviour for how flex items are laid out along the cross axis on the current line. It has the following values:
+    *   stretch, stretch the flex items from top to bottom if flow-direction is row; and from left to right if flow-direction is column.
+    *   flex-start, given that the container height is 800px, and each flex item has a default height say 20px. then flex-start will control items to the top left position.
+    *   flex-end, the opposite effect to flex-start
+    *   center, items sit at the center of cross-axis 
+    *   baseline, item content sit at the baseline
+*/
+.container-5 {
+    display: flex;   
+    
+    border: 6px solid black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    height: 400px;
+    flex-flow: row wrap;
+    align-items: flex-start;           /*values: stretch (default), flex-start, flex-end, center, baseline */
+
+}
+
+.flex-item {
+    color: white;
+    font-size: 1.5rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+.item-1 {
+    background-color: #b4bf35;
+}
+.item-2 {
+    background-color: #b95f21;
+}
+.item-3 {
+    background-color: #1c4c56;
+}
+.item-4 {
+    background-color: #cfb276;
+}
+.item-5 {
+    background-color: #6b0803;
+}
+.item-6 {
+    background-color: #1c4c56;
+}
+.item-7 {
+    background-color: #b95f21;
+}
+.item-8 {
+    background-color: #01243a;
+}
+.item-9 {
+    background-color: #aad041;
+}
+
+
+/*********************************************************************************** 
+    Topic 6 - flex item - order property
+    * by default all flex items have order 0
+    * if we set one item as order 1, it means that the item will be ranked after order 0. Hence, if we set itemi-3's order as 1, then itemi-3 will be put at the right.
+    * order control the order of items in the flex container
+    * it can only be non-negative integer value.
+*/
+.container-6 {
+    display: flex;   
+    
+    border: 6px solid black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+/*********************************************************************************** 
+    Topic 8 - flex-item - flex-shrink property
+    * by default, flex-shrink value is 1.
+    * it dicates shrink fator of the flex items where default size of flex items is larger than the flex container.
+    * it's relative to other items in the container.
+*/
+.flex-itemi {
+    color: white;
+    font-size: 1.5rem;
+    padding: 1rem;
+    text-align: center;
+    /* flex-shrink: 0; */
+}
+
+.itemi-1 {
+    background-color: #b4bf35;
+}
+.itemi-2 {
+    background-color: #b95f21;
+}
+/* it's to test order value */
+.itemi-3 {
+    background-color: #1c4c56;
+    order: 1;
+    flex-shrink:3;              /* it shrink the size 3 TIMES as the rest of flex items. */
+}
+.itemi-4 {
+    background-color: #cfb276;
+}
+
+/*********************************************************************************** 
+    Topic 7 - flex-item - flex-grow property
+    * when setting for example justify-content as flex-start, and there're still spaces between flex item and main end. setting up flex-grow will take the space, and assign the width of flex-item (where flex-grow has values) accordingly.
+    * we can also set up flex-grow within flex-itemi class, and it will evenly distribute the empty space.
+*/
+.itemi-5 {
+    background-color: #6b0803;
+    flex-grow: 1;                   /* take 1/3 of the empty space */
+}
+.itemi-6 {
+    background-color: #1c4c56;
+    flex-grow: 2;                   /* take 2/3 of the empty space */
+}
+
+.itemi-7 {
+    background-color: #b95f21;
+    order: 2;
+}
+
+
+.container-7 {
+    display: flex;   
+    
+    border: 6px solid black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 400px;
+}
+
+/*********************************************************************************** 
+    Topic 9 - flex-item - flex-basis property
+    * if flex-grow or flex-shrink is defined, then flex-basis will be applied first, then flex-grow or flex-shrink;
+    * flex-basis sets the initial value of flex item width.
+*/
+.flex-itemx {
+    color: white;
+    font-size: 1.5rem;
+    padding: 1rem;
+    text-align: center;
+    flex-basis: 15px;
+
+}
+
+/*********************************************************************************** 
+    Topic 10 - flex-item - align-self property
+    * it acts similar as align-item at container level, however, it justifies individual item's behaviour.
+    * it has values such as "flex-start", "flex-end", "center", "stretch", "auto" (by default, and will inherit the value from the container.
+*/
+.itemx-1 {
+    background-color: #b4bf35;
+    align-self: flex-start;
+}
+.itemx-2 {
+    background-color: #b95f21;
+    align-self: flex-end;
+}
+.itemx-3 {
+    background-color: #1c4c56;
+    align-self: center;
+}
+.itemx-4 {
+    background-color: #cfb276;
+    align-self: stretch;
+}
+.itemx-5 {
+    background-color: #6b0803;
+    align-self:auto;
+}

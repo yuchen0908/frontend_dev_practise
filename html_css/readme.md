@@ -153,15 +153,29 @@ Topic - what is Flexbox
             * `row-gap`, to set the gap between rows
             * `gap`, it's a shorthand / combo of `column-gap` and `row-gap`.
             * `justify-content`, define the alignment of content along the main axis
-            * `align-items`, defines the default behavior for how flex items are laid out along the cross axis on the current line
+            * `align-items`, defines the default behavior for how flex items are laid out along the <b>cross axis</b> on the current line
             * `align-content`,  aligns a flex container’s lines within when there is extra space in the cross-axis, similar to how `justify-content` aligns individual items within the main-axis
+        
         * immediate children: flex items
+            * `order`, the order property controls the order in which they appear in the flex container;
+            * `flex-grow`,  defines the ability for a flex item to grow if necessary. It accepts a unitless value that serves as a proportion. It dictates what amount of the available space inside the flex container the item should take up;
+            * `flex-shrink`, the opposite of flex-grow, which will shrink the flex item.
+            * `flex-basis`, defines the default size of an element before the remaining space is distributed. It can be a length (e.g. 20%, 5rem, etc.) or a keyword.
+            * `flex`, a shorthand of combo, sequence as below `flex-grow`, `flex-shrink` and `flex-basis`. by default, the value combo is `flex: 0 1 auto`
+            * `algin-self`, allows the default alignment (or the one specified by align-items) to be overridden for individual flex items.
         * [visual ref](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+        
     * flex axes, which consist of the main axis and cross axis.
         * by default, main axis is horizontal direction, and grows from left to right; the cross axis is perpendicular to main axis and grows from top to bottom.
         * the start of the main axis is called main start, and the end of the main axis is called main end. The length between main start and main end is called main size.
         * similarly, we have cross start, cross end and cross size. 
 
+# CSS to create a navbar
+[Video](https://www.youtube.com/watch?v=PwWHL3RyQgk&list=PLif4iXLY4SOxbZS26ruK6s6N7ffYPEGF2&index=14&t=256s)
+
+It's an application of our CSS Flex tutorial.
+
+# CSS Grid Crash Course
 
 
 # Resources:
