@@ -1,5 +1,5 @@
 # Basic HTML Tutorial
-[HTML Crash course 2022](https://www.youtube.com/watch?v=N8YMl4Ezp4g&list=PLif4iXLY4SOxbZS26ruK6s6N7ffYPEGF2&index=1&t=1541s)
+[Video](https://www.youtube.com/watch?v=N8YMl4Ezp4g&list=PLif4iXLY4SOxbZS26ruK6s6N7ffYPEGF2&index=1&t=1541s)
 
 Topic Semantic HTML
 1. When grouping elements or conent in a webpage, it's possible to use just `div` and `span` tags together. However, those tags don't tell anything about content. 
@@ -27,7 +27,7 @@ There're some key points we can take away from this tutorial:
 5. the rest of the items can be found under ./html-02-semantic
 
 # Basic CSS Tutorial
-[Here](https://www.youtube.com/watch?v=Icf5D3fEKbM&list=PLif4iXLY4SOxbZS26ruK6s6N7ffYPEGF2&index=4)
+[Video](https://www.youtube.com/watch?v=Icf5D3fEKbM&list=PLif4iXLY4SOxbZS26ruK6s6N7ffYPEGF2&index=4)
 
 Topic - Intro
 CSS (Cascading Style Sheets) is the language used to style HTML document. A metaphor is 
@@ -90,9 +90,46 @@ In web design, every HTML element is considered a rectangular box. It is a kind-
 
 Topic - cascading
 When two rules apply that have equal specificity, the one that comes last in the CSS is the one that will be used.
-* specificity, is how the browser decides which rule applies if multiple rules have different selectors but apply to the same element.
+* specificity, is how the browser decides which rule applies if multiple rules have different selectors but apply to the same element. Specificity is calculated and compared based on weights from left to right position across three key elements: ID > Class > Type. However, inline style has the highest ranking power. 
+    1. taking h4 specificity tag as an example -> refer to Topic 9 in css stylesheet.
+    2. [more details](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity)
 
+Topic - inheritance
+Some CSS property values set on parent elements are inheried by their child elements, and some are not.
+* inheritance controls what happens when no value is specified for a property on an element (which by default set to the computed value of the parent element).
+* CSS properties can be categorised in two types: inheried properties and non-inherited properties (which by default are set to initial values).  
+* inheritance is less superior than specificity.
 
+Topic - CSS Units
+
+absolute units - good for printing
+|Unit|Name       |Equivalent to            |
+|----|-----------|-------------------------|
+|cm  |centimeters|1cm = 37.8px = 25.2/64 in|
+|mm  |millimeters|1mm = 1/10 cm            |
+|Q   |quarter-mm |1Q = 1/4 mm              |
+|in  |inches     |1in = 2.54cm = 96px      |
+|pc  |picas      |1pc = 1/6 in = 16px      |
+|pt  |points     |1pt = 1/72 in = 1.3px    |
+|px  |pixel      |1px = 1/96 in            |
+
+relative units - are relative to something else, perphas the size of the parent element fonts, or the size of the viewport.
+|Unit |Relative to                                           |
+|-----|------------------------------------------------------|
+|em   |font size of the parent                               |
+|ex   |x-height of the element font                          |
+|ch   |the advance measure of the glyph 0 of the element font|
+|rem  |font size of the root element typically the body elem |
+|lh   |line height of the element                            |
+|vw   |1% of the viewport width                              |
+|vh   |1% of the viewport height                             |
+|vmin |1% of the viewport's smaller dimension                |
+|vmax |1% of the viewport's larger dimension                 |
+
+we can also use max() and min() to calculate values.
+
+# CSS Flexbox Crash Course
+[Video](https://www.youtube.com/watch?v=z62f2k38s64&list=PLif4iXLY4SOxbZS26ruK6s6N7ffYPEGF2&index=5&t=416s)
 
 # Resources:
 1. a library / service that provides legally-protected images [here](https://unsplash.com/)
