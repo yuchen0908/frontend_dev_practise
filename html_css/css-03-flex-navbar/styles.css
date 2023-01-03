@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+/**************************************************************
+    s1 - to set the universal elements such as 
+    * background
+    * general maring and padding
+    * box-sizing
+*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+/**************************************************************
+    s2 - to set the font-related features across all elements with text
+*/
+li, a, button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;                    /* font weight 500 indicates medium bold */
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+}
+
+/**************************************************************
+    s3 - set the header by applying flex
+*/
+header {
+    display: flex;
+    flex-flow: row nowrap;              /* ;et's set the row direction with no wrap */
+    justify-content: space-between;     /* let's evenly distribute those items along main axis */
+    align-items: center;                /* let's put items in the centre vertically */
+    padding: 30px 10%;                  /* top and bottom, we set the padding as 30px; left and right, we set 10% of the screen width */
+}
+
+/**************************************************************
+    s4 - set up the logo
+*/
+.logo {
+    width: 75px;
+    height: 75px;
+    cursor: pointer;                    /* when moving on top of the logo it becomes a pointer */
+}
+
+/**************************************************************
+    s5 - set up the nav links by removing the bullet point
+*/
+.nav_links {
+    list-style: none;
+}
+
+/**************************************************************
+    s6 - how to organise list elements
+
+    * Compared to display: inline, the major difference is that display: inline-block allows to set a width and height on the element.
+    * Also, with display: inline-block, the top and bottom margins/paddings are respected, but with display: inline they are not.
+    * Compared to display: block, the major difference is that display: inline-block does not add a line-break after the element, so the element can sit next to other elements
+*/
+.nav_links li {
+    display: inline-block;
+    padding: 0px 20px;                  /* set up left and right padding to 20px */
+}
+
+/**************************************************************
+    s7 - set up the transition of hyperlinks
+*/
+.nav_links li a {
+    transition: all 0.3s ease 0s;
+}
+.nav_links li a:hover {
+    color: darkgray;
+}
+
+/**************************************************************
+    s8 - set up the transition of button
+*/
+button {
+    padding: 9px 25px;
+    background-color: grey;
+    border: none;
+    border-radius: 50px;                /* rather than having a border, we can make it a round one by using border-radius */
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    color: white;
+}
+button:hover {
+    background-color: darkgrey;
+}

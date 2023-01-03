@@ -172,7 +172,6 @@ Topic - what is Flexbox
 
 # CSS to create a navbar
 [Video](https://www.youtube.com/watch?v=PwWHL3RyQgk&list=PLif4iXLY4SOxbZS26ruK6s6N7ffYPEGF2&index=14&t=256s)
-
 It's an application of our CSS Flex tutorial.
 
 # CSS Grid Crash Course
@@ -181,3 +180,4 @@ It's an application of our CSS Flex tutorial.
 # Resources:
 1. a library / service that provides legally-protected images [here](https://unsplash.com/)
 2. a library / service that provides legally-proctected icons [here](https://www.flaticon.com/)
+3. Google fonts that provides support / library of fonts [here](https://fonts.google.com/)
