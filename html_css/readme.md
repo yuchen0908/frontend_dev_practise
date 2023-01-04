@@ -73,7 +73,7 @@ Topic - basic CSS options:
     * we can define a class as "colour" and update css style with a background colour.
 2. text properties
     * `font-family`, to change the font
-    * we can define a class called "font-styles", and use the font via the class. With this methods, we can add other font-related styles in such as `font-size`, `font-weight`, `font-size`, `text-decorate`;
+    * we can define a class called "font-styles", and use the font via the class. With this methods, we can add other font-related styles in such as `font-size`, `font-weight` (values can either by 100,200, etc.. or names like bold, medium, etc..), `font-size`, `text-decorate` (values like underline, and none);
 3. text layout properties
     * we add those attributes under the `.grey` class in styles.css file.
     * `text-align`, to specify whether the text should be left-aligned, position in the center or right-aligned.
