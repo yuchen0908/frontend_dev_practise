@@ -1,0 +1,16 @@
+
+* {
+    /* box-sizing: border-box, padding and border are included in the width and height. It means when setting width and height for an element, it reflects the true width and height.
+    ref: https://www.w3schools.com/css/css3_box-sizing.asp*/
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+
+
+#map {
+    height: 800px;
+    width: 100%;
+    margin: 5rem auto;
+}

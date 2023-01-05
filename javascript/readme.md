@@ -1,5 +1,5 @@
 # Javascript Tutorial for beginners
-[reference - javascript tutorial](https://www.youtube.com/watch?v=W6NZfCO5SIk&list=PLif4iXLY4SOxbZS26ruK6s6N7ffYPEGF2)
+[Video](https://www.youtube.com/watch?v=W6NZfCO5SIk&list=PLif4iXLY4SOxbZS26ruK6s6N7ffYPEGF2)
 
 Topic - how to quickly get the html sample code
 1. create "index.html" file under the folder
@@ -20,7 +20,7 @@ Topic - separation of concern
 The rest of the topics from the Youtube video can be found in /js-basic/index.js
 
 # Javascript OOP
-[reference - Javascript OOP](https://www.youtube.com/watch?v=PFmuCDHHpwk)
+[Video](https://www.youtube.com/watch?v=PFmuCDHHpwk)
 
 Topic - difference between procedural and object-oriented programming
 1. Procedural programming - it's function based and a program connects different functions together
@@ -40,36 +40,8 @@ Topic - key concepts of JS OOP
     * for example, `TextBox`, `Select` and `CheckBox` are all HTML elements. And they all have properties like "hidden" and "innerHTML", and methods like "click()" and "focus()". Hence, we don't need to write each class but write "HTMLElement" class, and those inherit from it.
 4. Polymorphism (many forms) - when rendering `TextBox`, `Select` and `CheckBox`, methods underneath will be different, however, via the same `render()` method.
 
+Rest of the content can be found at /javascript/js-02-oop/.. folder
 
-# ES6 Tutorials
-[reference - ES6 tutorial](https://www.youtube.com/watch?v=NCwa_xi0Uuc)
+# Javascript Advanced Topic
+[Video](https://www.youtube.com/watch?v=R9I85RhI7Cg&list=PLif4iXLY4SOxbZS26ruK6s6N7ffYPEGF2&index=8)
 
-# HTML crash course
-[reference - HTML crash course](https://www.youtube.com/watch?v=qz0aGYrrlhU&t=2237s)
-
-# React JS
-[reference - React JS Tutorial](https://www.youtube.com/watch?v=Ke90Tje7VS0&list=PLTjRvDozrdlw5En5v2xrBr_EqieHf7hGs&index=2)
-
-# Other topics
-Topic - Error Handling
-
-Topic - Async JS
-
-Topic - Equality difference between "===" and "=="
-
-Topic - Arrow function expressions
-* An arrow function expression is a compact alternative to a traditional function expression, with some semantic differences and deliberate limitations in usage:
-    * Arrow functions don't have their own bindings to `this`, `arguments`, or `super`, and should not be used as `methods`.
-    * Arrow functions cannot be used as `constructors`. Calling them with new throws a TypeError. They also don't have access to the `new.target` keyword.
-    * Arrow functions cannot use `yield` within their body and cannot be created as generator functions.
-    
-[Arrow function reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
-
-Topic - Var, Let and Const
-|Keywords|Scope level   |Re-declare|Update |
-|--------|--------------|----------|-------|
-|Var     |block / global|Y         |Y      |
-|Const   |block         |N         |N      |
-|Let     |block         |Y         |Y      |
-
-[Difference between Var, Let and Const](https://www.freecodecamp.org/news/var-let-and-const-whats-the-difference/)
