@@ -175,6 +175,41 @@ Topic - what is Flexbox
 It's an application of our CSS Flex tutorial.
 
 # CSS Grid Crash Course
+[video](https://www.youtube.com/watch?v=p4Ith5qRM1g&list=PLif4iXLY4SOxbZS26ruK6s6N7ffYPEGF2&index=6&t=1164s)
+Grid is 2d grid-based layout system. With column and row, grid is easy to design webpage layouts, align and distrubte space among items in a grid.<br>
+[best reference done by Rachel Andrew](https://gridbyexample.com/)
+
+Topic - terminology
+* Grid container - the parent
+* Grid items - the children
+* Grid line - the line to divide the space into cells, the gutter
+* Grid cell - the smallest area 
+* Grid track - horizontal / vertical cells from start to end
+* Grid area - the rectangles consist of a number of grid cells
+
+Topic - Grid container properties
+|Property Name|Desc|values|
+|-------------|----|------|
+|`display`|type  of display|grid/inline-grid|
+|`grid-template-columns`|the number of columns in the grid|for example 100px 200px 300px, it defines three columns. <br> or repeat(3,1fr) means that three columns each are 1fr(action)
+|`grid-template-rows`|the number of rows in the grid|same as `grid-template-columns`|
+|`grid-tempate`|||
+|`column-gap`||
+|`row-gap`||
+|`gap`||
+|`justify-items`||
+|`align-items`||
+|`place-items`||
+|`justify-content`||
+|`align-content`||
+|`place-content`||
+|`grid-auto-columns`||
+|`grid-auto-rows`||
+|`grid-auto-flow`||
+
+accepted functions for example:
+1. repeat(numofrepeat, value) 
+2. minmax(value1, value2)
 
 
 # Resources:

@@ -42,6 +42,10 @@ Topic - key concepts of JS OOP
 
 Rest of the content can be found at /javascript/js-02-oop/.. folder
 
-# Javascript Advanced Topic
-[Video](https://www.youtube.com/watch?v=R9I85RhI7Cg&list=PLif4iXLY4SOxbZS26ruK6s6N7ffYPEGF2&index=8)
+# Javascript ES6
+[Video](https://www.youtube.com/watch?v=NCwa_xi0Uuc&list=PLif4iXLY4SOxbZS26ruK6s6N7ffYPEGF2&index=13)
+
+
+# React Basic
+[Video](https://www.youtube.com/watch?v=Ke90Tje7VS0&t=990s)
 
