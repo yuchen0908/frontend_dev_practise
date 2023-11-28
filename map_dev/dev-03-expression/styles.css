@@ -1,0 +1,37 @@
+
+* {
+    /* box-sizing: border-box, padding and border are included in the width and height. It means when setting width and height for an element, it reflects the true width and height.
+    ref: https://www.w3schools.com/css/css3_box-sizing.asp*/
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items:flex-start;
+    height:1000px;
+}
+
+.container > h1 {
+    align-self:flex-start;
+    padding-top: 1em;
+    font-size: 25px;
+    padding:10px 10px;
+}
+
+.container > #article {
+    width:100%;
+}
+
+.container > #article > p {
+    padding:10px 10px;
+}
+
+.container > #map {
+    width: 100%;
+    flex-grow:8;
+    padding:10px 10px;
+}

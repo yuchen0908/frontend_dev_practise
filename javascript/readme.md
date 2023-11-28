@@ -47,5 +47,28 @@ Rest of the content can be found at /javascript/js-02-oop/.. folder
 content are saved under ./javascript/js-03-es6/..
 
 # React Basic
-[Video](https://www.youtube.com/watch?v=Ke90Tje7VS0&t=990s)
+[Video](https://www.youtube.com/watch?v=Ke90Tje7VS0&list=PLif4iXLY4SOxbZS26ruK6s6N7ffYPEGF2&index=20&t=848s)
 
+Some preparations before kicking off
+1. enable node and install `npm i -g create-react-app`, it is to install create-react-app package. 
+2. install VSC extension `Simple React Snippets`, the extension has many shortcuts / functions to quickly write import statements.
+3. install VSC extension `prettier`, which enables automatic code formatting. [link](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+
+Once those things are done, we're ready to create the first React Application. We type `create-react-app react-app` in the directory where we want to save the app. Through the process, create-react-app essentially makes a development server, add the web packages as well as Babel. <br>
+
+Once it's all done, we can run `npm start` to run the development mode, and `Ctrl + C` to quit. 
+
+Topic - Understand React Folder Structure<br>
+Under /react-app/.. we have the following folders:
+1. /node_modules/.., all the dependencies / packages are installed here. I have gitigore the folder given the size of the folder. 
+2. /public/.., like asset folder in traditional developement. It has:
+    * index.html, which is the homepage html file. the `div` tag under body is a container where our react app actualy sits. 
+    * manifest.json, which links to index.html. It has all relevant meta data. 
+3. /src/.., this is the javascript folder where we make the app. Essentially, we build a JS app that manipulates DOM elements as well as provides UI funcitonality. 
+    * App.js, contains what we by default shows the interface when running `npm start`. What returns is called JSX, which we can run in [Babel site](https://babeljs.io/repl). JSX is code that can be translated to pure React JS.
+    * App.css, the css stylesheet that App.js is going to load;
+    * index.js, the entry point for our application
+    * etc .. 
+
+Topic - Overview
+1. 

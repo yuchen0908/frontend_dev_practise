@@ -1,3 +1,10 @@
+# Examples:
+[dev-02-choropleth](https://docs.mapbox.com/mapbox-gl-js/example/data-join/)
+[dev-03-expression](https://docs.mapbox.com/help/tutorials/mapbox-gl-js-expressions/)
+[dev-04-map-comp](https://docs.mapbox.com/mapbox-gl-js/example/mapbox-gl-compare/)
+[dev-05-filter-features](https://docs.mapbox.com/mapbox-gl-js/example/filter-features-within-map-view/)
+[dev-06-updaet-choropleth](https://docs.mapbox.com/mapbox-gl-js/example/updating-choropleth/)
+
 # How to create interactive map layers via Leaflet
 [video](https://www.youtube.com/watch?v=qNqxgSoknGg&list=PLif4iXLY4SOxbZS26ruK6s6N7ffYPEGF2&index=11&t=172s)
 

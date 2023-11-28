@@ -8,16 +8,27 @@
     <title>CSS Grid</title>
 </head>
 <body>
-    <div class="container">
-        <div class="grid-item item-1">Item 1</div>
-        <div class="grid-item item-2">Item 2</div>
-        <div class="grid-item item-3">Item 3</div>
-        <div class="grid-item item-4">Item 4</div>
-        <div class="grid-item item-5">Item 5</div>
-        <div class="grid-item item-6">Item 6</div>
-        <div class="grid-item item-7">Item 7</div>
-        <div class="grid-item item-8">Item 8</div>
-        <div class="grid-item item-9">Item 9</div>
-    </div>
+    <main class="container">
+        <section class="grid-item item-1">
+            <div class="block-a">
+                <label for="factors">Top Factors</label>
+                <select name="factors" id="factors">
+                    <option value="median-price">Median Price</option>
+                    <option value="house-median-price">House Median Price</option>
+                    <option value="apt-median-price">Apartment Median Price</option>
+                </select>
+            </div>
+            <div class="block-b">
+                <label for="month-selector">Month Selector</label>
+                <input type="month" id="month-selector" name="month-selector" min="2015-12" max='2023-01' value="2023-01">
+            </div>
+            <div class="'block-c">
+                <label for="compare-slider">Compare Past Years</label>
+                <input type="range" min="1" max="5" value="2" name="compare-slider" id="compare-slider">
+            </div>
+        </section>
+        <section class="grid-item item-2">Suburbs</section>
+        <section class="grid-item item-3">Main Map</section>
+    </main>
 </body>
 </html>

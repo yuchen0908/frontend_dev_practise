@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maps Project</title>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.12.0/mapbox-gl.css" rel="stylesheet">
+<script src="https://api.mapbox.com/mapbox-gl-js/v2.12.0/mapbox-gl.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class="container">
+        <h1>
+            <a href="https://docs.mapbox.com/mapbox-gl-js/style-spec/expressions" target="_blank">Mapbox JS expression</a>
+        </h1>
+        <div id="article">
+            <p>In the Mapbox Style Specification, the value for any layout property, paint property, or filter may be specified as an expression. Expressions define how one or more feature property value and/or the current zoom level are combined using logical, mathematical, string, or color operations to produce the appropriate style property value or filter decision.</p>
+            <p>A property expression is any expression defined using a reference to feature property data. Property expressions allow the appearance of a feature to change with its properties. They can be used to visually differentiate types of features within the same layer or create data visualizations.</p></div>
+        <div id="map"></div>
+    </main>
+    <script src="main.js" type="module"></script>
+</body>
+</html>
